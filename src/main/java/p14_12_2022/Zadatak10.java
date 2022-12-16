@@ -11,7 +11,9 @@ public class Zadatak10 {
 
         if (a % 2 == 0){
             System.out.println("Broj je deljiv sa 2");
-        } else if (a % 3 == 0) {
+        }
+
+        if (a % 3 == 0) {
             System.out.println("Broj je deljiv sa 3");
         } else {
             System.out.println("Broj nije deljiv sa 2 ili 3");
