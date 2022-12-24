@@ -36,7 +36,7 @@ public class Zadatak1 {
         int novaVrednost = s.nextInt();
         brojevi.set(k, novaVrednost);
 
-        System.out.println("Nova vrednost za element na poziciji 3 je: " + brojevi.set(k, novaVrednost));
+        System.out.println("Nova vrednost za element na poziciji " + k + " je " + brojevi.set(k, novaVrednost));
 
     }
 }
