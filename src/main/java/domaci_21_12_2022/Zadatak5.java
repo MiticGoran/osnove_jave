@@ -31,13 +31,16 @@ public class Zadatak5 {
             System.out.println("Unesite broj: ");
             broj = s.nextInt();
             a.add(broj);
-            if (a.get(i) < 3 && a.get(i) > 0){
-                b.add(broj);
-            } else {
+
+            if (i > 2){
                 b.add(1);
+            } else {
+                b.add(broj);
             }
-        }
+
+            }
         System.out.println("Niz a: " + a);
         System.out.println("Niz b: " + b);
     }
+
 }
