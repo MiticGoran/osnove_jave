@@ -18,24 +18,29 @@ import java.util.Scanner;
 public class Zadatak3 {
     public static void main(String[] args) {
         ArrayList<Integer> brojevi = new ArrayList<Integer>();
-        ArrayList<Integer> pozitivni = new ArrayList<Integer>();
+//        ArrayList<Integer> pozitivni = new ArrayList<Integer>();
         Scanner s = new Scanner(System.in);
         System.out.println("Unesite N: ");
         int n = s.nextInt();
         int broj = 0;
-        String veciOdNule = "";
 
         for (int i = 0; i < n; i++) {
             System.out.println("Unesite broj: ");
             broj = s.nextInt();
             brojevi.add(broj);
-            if (broj > 0){
-                veciOdNule = veciOdNule + broj + ", ";
-            }
         }
-        System.out.println("Brojevi veci od nule u nizu A su: " + veciOdNule);
-    }
+        System.out.print("Brojevi veci od nule u nizu A su: ");
+        for (int i = 0; i < n; i++) {
+            if (brojevi.get(i) > 0) {
+                System.out.print(brojevi.get(i) + ", ");
+            }
+
+        }
+        }
 }
+
+//        if (broj > 0){
+//        veciOdNule = veciOdNule + broj + ", ";
 
 //        System.out.print("Brojevi veci od nule u nizu A su: " + pozitivni);
 //        for (int i = 0; i < n; i++) {

@@ -24,16 +24,26 @@ public class Zadatak4 {
         ArrayList<Integer> brojevi = new ArrayList<Integer>();
         System.out.println("Unesite N: ");
         int n = s.nextInt();
+        int broj;
+        int x;
 
         for (int i = 0; i < n; i++) {
             System.out.println("Unesite broj: ");
-            int broj = s.nextInt();
+            broj = s.nextInt();
             brojevi.add(broj);
         }
         System.out.println("Unesite X: ");
-        int x = s.nextInt();
-        System.out.println("Elementi niza A koji su jednaki broju X imaju indekse: "
-                            + brojevi.indexOf(x) + ", " + x);
+        x = s.nextInt();
 
+        System.out.print("Elementi niza A koji su jednaki broju X imaju indekse: ");
+        for (int i = 0; i < n; i++) {
+            if (brojevi.get(i) == x){
+                System.out.print(i + ", ");
+            }
+        }
     }
 }
+
+
+//        System.out.println("Elementi niza A koji su jednaki broju X imaju indekse: "
+//                + brojevi.indexOf(x));

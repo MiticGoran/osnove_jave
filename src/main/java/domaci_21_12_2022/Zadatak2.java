@@ -35,3 +35,5 @@ public class Zadatak2 {
         System.out.println("U nizu ima " + parniBrojevi.size() + " parna broja.");
     }
 }
+
+// Moze da se uradi i sa counter-om
