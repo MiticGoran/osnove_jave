@@ -32,4 +32,5 @@ public class Student {
     public boolean getBudzet(){
         return this.budzet;
     }
+
 }
