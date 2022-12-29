@@ -11,6 +11,10 @@ public class Zadatak3 {
         prviAuto.godinaProizvodnje = 2008;
         prviAuto.registracija = 12;
         prviAuto.kubikazaAuta = 1600;
+        prviAuto.brojRegistracije = "KS-8000-MG";
+        prviAuto.maksBrzina = 240;
+        prviAuto.kapacitetRezervoara = 50;
+        prviAuto.trenutnoGoriva = 20;
 
         prviAuto.print();
 
@@ -30,6 +34,12 @@ public class Zadatak3 {
         }
 
         System.out.println("Cena registracije je: " + prviAuto.cenaRegistracije());
+
+        prviAuto.dodajGas();
+        System.out.println("Trenutna brzina: " + prviAuto.brzina);
+        System.out.println("Potrosnja je: " + prviAuto.trenutnaPotrosnja());
+        prviAuto.stampajTablu();
+        System.out.println(prviAuto.natociGorivo(20));
 
 
     }
