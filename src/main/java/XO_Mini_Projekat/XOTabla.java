@@ -50,9 +50,28 @@ public class XOTabla {
         System.out.println("Na potezu igrac " + this.naPotezu);
     }
     public boolean poljePrazno(String brojPolja){
-        if (brojPolja.equals(" ")){
+        if (brojPolja.equals("1") && this.polje1.equals(" ")){
             return true;
-        } else return false;
+        } else if (brojPolja.equals("2") && this.polje2.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("3") && this.polje3.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("4") && this.polje4.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("5") && this.polje5.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("6") && this.polje6.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("7") && this.polje7.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("8") && this.polje8.equals(" ")) {
+            return true;
+        } else if (brojPolja.equals("9") && this.polje9.equals(" ")) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public String zameniIgraca(){

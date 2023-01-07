@@ -21,17 +21,21 @@ public class IksOks {
             igraci.stampaj();
             System.out.println("Odigraj potez: ");
             String potez = s.next();
-            igraci.odigrajPotez(potez);
-            if (igraci.pobednikX()) {
-                System.out.println("Cestitamo! Pobednik je igrac X");
-                System.out.println("Bravo " + igraci.getImeXIgraca());
-            } else if (igraci.pobednikO()){
-                System.out.println("Cestitamo! Pobednik je igrac O");
-                System.out.println("Bravo " + igraci.getImeOIgraca());
-            } else if (igraci.popunjenaTabla()) {
-                System.out.println("Igra je neresena.");
+            if (igraci.poljePrazno(potez)) {
+                igraci.odigrajPotez(potez);
+                if (igraci.pobednikX()) {
+                    System.out.println("Cestitamo! Pobednik je igrac X");
+                    System.out.println("Bravo " + igraci.getImeXIgraca());
+                } else if (igraci.pobednikO()) {
+                    System.out.println("Cestitamo! Pobednik je igrac O");
+                    System.out.println("Bravo " + igraci.getImeOIgraca());
+                } else if (igraci.popunjenaTabla()) {
+                    System.out.println("Igra je neresena.");
+                }
+                igraci.zameniIgraca();
+            } else {
+                System.out.println("Potez nije validan.");
             }
-            igraci.zameniIgraca();
         }
 
     }
