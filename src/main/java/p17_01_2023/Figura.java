@@ -7,4 +7,5 @@ public abstract class Figura {
         System.out.println("Povrsina je: " + this.povrsina());
         System.out.println("Obim je: " + this.obim());
     }
+
 }
